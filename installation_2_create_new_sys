@@ -1,0 +1,3 @@
+cd
+nano /etc/pacman.d/mirrorlist
+pacstrap -K /mnt base linux linux-firmware

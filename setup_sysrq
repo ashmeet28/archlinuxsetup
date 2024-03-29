@@ -1,1 +1,2 @@
+echo "1" | tee /proc/sys/kernel/sysrq
 echo "kernel.sysrq = 1" | tee /etc/sysctl.d/99-sysctl.conf

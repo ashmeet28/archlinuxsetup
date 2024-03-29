@@ -1,1 +1,2 @@
 pacman -S sudo
+echo "Feel free to exit and reboot"

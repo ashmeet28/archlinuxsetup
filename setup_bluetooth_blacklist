@@ -1,0 +1,1 @@
+echo "blacklist btusb" | sudo tee /etc/modprobe.d/bluetooth-blacklist.conf

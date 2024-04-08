@@ -1,0 +1,5 @@
+nano /etc/locale.gen
+locale-gen
+echo "LANG=en_US.UTF-8" | tee /etc/locale.conf
+echo "cyclone" | tee /etc/hostname
+echo "Run \"pacman -S networkmanager\""

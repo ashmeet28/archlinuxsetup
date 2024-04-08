@@ -1,0 +1,3 @@
+systemctl enable NetworkManager.service
+passwd
+echo "Run \"pacman -S grub\""

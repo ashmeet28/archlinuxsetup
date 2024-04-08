@@ -1,4 +1,0 @@
-ln -sf /usr/share/zoneinfo/US/Eastern /etc/localtime
-hwclock --systohc
-pacman -S nano
-nano /etc/locale.gen

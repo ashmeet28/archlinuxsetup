@@ -1,0 +1,46 @@
+# Make sure computer is connected to internet
+
+mount /dev/nvme0n1p2 /mnt/boot
+
+rm -rf /mnt/boot/*
+ls -la /mnt/boot
+
+cd /mnt
+rm -rf bin dev etc lib lib64 mnt opt proc root run sbin srv sys tmp usr var
+ls -la /mnt
+
+# Clean your user files
+cd /mnt/home/xenon
+
+echo "Server = https://geo.mirror.pkgbuild.com/\$repo/os/\$arch" | tee /etc/pacman.d/mirrorlist
+pacstrap -K /mnt base linux linux-firmware
+genfstab -U /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
+
+ln -sf /usr/share/zoneinfo/US/Eastern /etc/localtime
+hwclock --systohc
+pacman -S nano
+nano /etc/locale.gen
+# Uncomment en_US.UTF-8 UTF-8
+locale-gen
+echo "LANG=en_US.UTF-8" | tee /etc/locale.conf
+echo "cyclone" | tee /etc/hostname
+pacman -S networkmanager
+systemctl enable NetworkManager.service
+passwd
+pacman -S grub
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB --removable
+grub-mkconfig -o /boot/grub/grub.cfg
+pacman -S sudo
+exit
+
+# Rebooting
+umount -R /mnt
+reboot
+
+# Setting up new user
+useradd -d /home/xenon xenon
+passwd xenon
+usermod -aG wheel xenon
+export EDITOR=nano
+visudo

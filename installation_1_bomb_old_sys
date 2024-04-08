@@ -1,9 +1,0 @@
-cd
-mount /dev/nvme0n1p2 /mnt/boot
-rm -rf /mnt/boot/*
-ls -la /mnt/boot
-cd /mnt
-rm -rf bin dev etc lib lib64 mnt opt proc root run sbin srv sys tmp usr var
-ls -la /mnt
-cd /mnt/home/xenon
-echo "Clean your user files"

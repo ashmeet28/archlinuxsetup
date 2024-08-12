@@ -1,0 +1,10 @@
+[Unit]
+Description="Take action for the critical battery level every minute"
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1min
+Unit=takeactionforthecriticalbatterylevel.service
+
+[Install]
+WantedBy=timers.target

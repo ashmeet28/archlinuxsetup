@@ -1,5 +1,0 @@
-useradd -d /home/xenon xenon
-passwd xenon
-usermod -aG wheel xenon
-export EDITOR=nano
-visudo

@@ -1,6 +1,4 @@
-sudo pacman -S bash-completion gnome-shell gnome-control-center gnome-terminal gnome-tweaks gnome-backgrounds gdm gvfs dosfstools base-devel man-db man-pages dbus-glib ffmpeg git htop noto-fonts ttf-hack qemu-desktop wget transmission-gtk inkscape imagemagick smartmontools
-gsettings set org.gnome.desktop.media-handling automount false
-gsettings set org.gnome.desktop.media-handling automount-open false
+sudo pacman -S gnome-shell gnome-control-center gnome-backgrounds gnome-terminal gnome-tweaks gdm dconf-editor imagemagick inkscape audacity ffmpeg bash-completion base-devel dbus-glib dosfstools git gvfs htop man-db man-pages texinfo networkmanager-openvpn noto-fonts qemu-desktop smartmontools transmission-gtk ttf-hack vulkan-radeon wget zip
 sudo systemctl enable fstrim.timer
 sudo systemctl enable bluetooth.service
 sudo systemctl enable gdm.service

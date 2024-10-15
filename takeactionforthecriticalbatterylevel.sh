@@ -14,7 +14,7 @@ sleep 120
 # Sleep if the battery level is greater than or equal to 20%
 while [ $(cat "$BATTERY_STATUS_FILE") -ge 20 ];
 do
-    sleep 30
+    sleep 60
 done
 
 echo "Battery level is critical. Shutting down."

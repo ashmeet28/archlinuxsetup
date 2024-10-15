@@ -1,0 +1,9 @@
+sudo rm -rf /etc/systemd/system/takeactionforthecriticalbatterylevel.service
+sudo rm -rf /usr/local/bin/takeactionforthecriticalbatterylevel.sh
+
+sudo cp takeactionforthecriticalbatterylevel.sh /usr/local/bin/
+sudo chmod +x /usr/local/bin/takeactionforthecriticalbatterylevel.sh
+
+sudo cp takeactionforthecriticalbatterylevel.service /etc/systemd/system/
+
+sudo systemctl enable takeactionforthecriticalbatterylevel.service

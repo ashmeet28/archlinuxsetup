@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -d "/mnt/c/storage" ]; then
-  umount /mnt/c
-  sleep 1
+if [ -d "/mnt/b/storage" ]; then
   umount /mnt/b
   sleep 5
   udisksctl power-off -b /dev/sda

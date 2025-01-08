@@ -1,6 +1,3 @@
-iwctl
-sleep 60
-timedatectl
 fdisk /dev/sdb
 mkfs.ext4 /dev/sdb2
 mkfs.fat -F 32 /dev/sdb1

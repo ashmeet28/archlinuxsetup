@@ -4,5 +4,3 @@ Description=Take action for the critical battery level
 [Service]
 ExecStart=/usr/local/bin/takeactionforthecriticalbatterylevel.sh
 
-[Install]
-WantedBy=default.target

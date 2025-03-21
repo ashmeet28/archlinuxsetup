@@ -9,15 +9,8 @@ if [ ! -f "$BATTERY_STATUS_FILE" ]; then
     exit 1
 fi
 
-sleep 120
 
-# Sleep if the battery level is greater than or equal to 20%
-while [ $(cat "$BATTERY_STATUS_FILE") -ge 20 ];
-do
-    sleep 60
-done
-
-echo "Battery level is critical. Shutting down."
-
-# Initiate shutdown
-systemctl poweroff
+if [ $(cat "$BATTERY_STATUS_FILE") -le 20 ]; then
+    echo "Battery level is critical. Shutting down."
+    systemctl poweroff
+fi

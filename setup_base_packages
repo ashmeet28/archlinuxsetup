@@ -1,4 +1,5 @@
-sudo pacman -S gnome-shell power-profiles-daemon gnome-control-center gnome-backgrounds gnome-terminal gnome-tweaks nautilus gdm dconf-editor imagemagick inkscape audacity xorg-server ffmpeg bash-completion base-devel dbus-glib dosfstools git gvfs htop man-db man-pages networkmanager-openvpn noto-fonts qemu-desktop smartmontools transmission-gtk ttf-hack vulkan-radeon xf86-video-amdgpu wget zip
+#sudo pacman -S gnome-shell power-profiles-daemon gnome-control-center gnome-backgrounds gnome-terminal gnome-tweaks nautilus gdm dconf-editor imagemagick inkscape audacity xorg-server ffmpeg bash-completion base-devel dbus-glib dosfstools git gvfs htop man-db man-pages networkmanager-openvpn noto-fonts qemu-desktop smartmontools transmission-gtk ttf-hack vulkan-radeon xf86-video-amdgpu wget zip
+sudo pacman -S gnome-shell gnome-terminal gnome-control-center gnome-backgrounds gnome-tweaks power-profiles-daemon nautilus gvfs dbus-glib gdm xorg-server vulkan-radeon xf86-video-amdgpu bash-completion htop man-db man-pages smartmontools wget zip git ffmpeg dosfstools imagemagick ghostscript noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-hack ttf-opensans chromium audacity dconf-editor inkscape qemu-desktop transmission-gtk vlc
 sudo systemctl enable fstrim.timer
 sudo systemctl enable bluetooth.service
 sudo systemctl enable gdm.service

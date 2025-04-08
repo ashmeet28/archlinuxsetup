@@ -10,7 +10,7 @@ if [ ! -f "$BATTERY_STATUS_FILE" ]; then
 fi
 
 
-if [ $(cat "$BATTERY_STATUS_FILE") -le 20 ]; then
+if [ $(cat "$BATTERY_STATUS_FILE") -le 30 ]; then
     echo "Battery level is critical. Shutting down."
     systemctl poweroff
 fi

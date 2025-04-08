@@ -1,9 +1,9 @@
 [Unit]
-Description="Run takeactionforthecriticalbatterylevel.service 2min after boot and every 1min relative to activation time"
+Description="Run takeactionforthecriticalbatterylevel.service 5min after boot and every 5min relative to activation time"
 
 [Timer]
 OnBootSec=5min
-OnUnitActiveSec=1min
+OnUnitActiveSec=5min
 Unit=takeactionforthecriticalbatterylevel.service
 
 [Install]

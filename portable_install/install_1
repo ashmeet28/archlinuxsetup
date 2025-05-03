@@ -1,9 +1,0 @@
-fdisk /dev/sdb
-mkfs.ext4 /dev/sdb2
-mkfs.fat -F 32 /dev/sdb1
-mount /dev/sdb2 /mnt
-mount --mkdir /dev/sdb1 /mnt/boot
-nano /etc/pacman.d/mirrorlist
-pacstrap -K /mnt base linux linux-firmware
-genfstab -U /mnt >> /mnt/etc/fstab
-arch-chroot /mnt

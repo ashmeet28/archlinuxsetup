@@ -1,6 +1,0 @@
-useradd -m xenon
-passwd xenon
-usermod -aG wheel xenon
-export EDITOR=nano
-visudo
-sudo systemctl enable NetworkManager.service

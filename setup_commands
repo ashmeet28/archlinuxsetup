@@ -2,10 +2,7 @@ useradd -m xenon
 usermod -aG wheel xenon
 export EDITOR=nano
 visudo
-
-sudo ln -sf ../run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
-sudo mkdir /etc/systemd/resolved.conf.d
-sudo cp dns_over_tls.conf /etc/systemd/resolved.conf.d/
+passwd xenon
 
 sudo cp 20-amdgpu.conf /etc/X11/xorg.conf.d/
 

@@ -1,5 +1,0 @@
-sudo pacman -S vulkan-radeon bash-completion htop man-db man-pages smartmontools wget zip git ffmpeg dosfstools squashfs-tools rsync imagemagick ghostscript noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-hack ttf-opensans inter-font chromium audacity lmms qbittorrent inkscape qemu-desktop vlc vlc-plugins-all
-
-sudo systemctl enable fstrim.timer
-sudo systemctl enable bluetooth.service
-

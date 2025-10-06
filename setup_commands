@@ -4,16 +4,7 @@ export EDITOR=nano
 visudo
 passwd xenon
 
-sudo cp 20-amdgpu.conf /etc/X11/xorg.conf.d/
-
-sudo cp takeactionforthecriticalbatterylevel.service /etc/systemd/system/
-sudo cp takeactionforthecriticalbatterylevel.timer /etc/systemd/system/
-sudo cp takeactionforthecriticalbatterylevel.sh /usr/local/bin/
-sudo chmod +x /usr/local/bin/takeactionforthecriticalbatterylevel.sh
-
 echo "1" | sudo tee /proc/sys/kernel/sysrq
 echo "kernel.sysrq = 1" | sudo tee /etc/sysctl.d/99-sysctl.conf
-
-echo "blacklist btusb" | sudo tee /etc/modprobe.d/bluetooth-blacklist.conf
 
 cp code.desktop ~/.local/share/applications/

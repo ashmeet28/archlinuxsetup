@@ -19,3 +19,5 @@
 #sudo cp takeactionforthecriticalbatterylevel.sh /usr/local/bin/
 #sudo systemctl enable takeactionforthecriticalbatterylevel.timer
 
+#sudo systemctl enable cpupower.service
+

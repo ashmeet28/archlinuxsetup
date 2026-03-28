@@ -3,4 +3,4 @@ Description=Take action for the critical battery level
 
 [Service]
 ExecStart=/usr/local/bin/takeactionforthecriticalbatterylevel.sh
-
+LogLevelMax=notice

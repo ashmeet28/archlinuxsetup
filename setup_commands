@@ -21,3 +21,4 @@
 
 #sudo systemctl enable cpupower.service
 
+#sudo timedatectl set-ntp true

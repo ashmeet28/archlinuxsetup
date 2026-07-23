@@ -1,13 +1,15 @@
-#sudo pacman -S vulkan-radeon bluez bluez-utils cpupower bash-completion htop man-db man-pages udisks2 smartmontools wget zip git ffmpeg dosfstools squashfs-tools rsync unzip usbutils openssh base-devel imagemagick ghostscript noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-hack ttf-opensans inter-font xorg-server xf86-video-amdgpu xorg-xinit xorg-xrandr xorg-xsetroot feh pulseaudio pulseaudio-alsa pulseaudio-bluetooth pavucontrol chromium audacity lmms qbittorrent inkscape qemu-desktop vlc vlc-plugins-all
-
-#sudo systemctl enable fstrim.timer
-#sudo systemctl enable bluetooth.service
-
 #useradd -m xenon
 #usermod -aG wheel xenon
 #export EDITOR=nano
 #visudo
 #passwd xenon
+
+#sudo pacman -S vulkan-radeon bluez bluez-utils cpupower bash-completion htop man-db man-pages udisks2 smartmontools wget zip git ffmpeg dosfstools squashfs-tools rsync unzip usbutils openssh base-devel imagemagick ghostscript noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-hack ttf-opensans inter-font xorg-server xf86-video-amdgpu xorg-xinit xorg-xrandr xorg-xsetroot feh pulseaudio pulseaudio-alsa pulseaudio-bluetooth pavucontrol chromium audacity lmms qbittorrent inkscape qemu-desktop vlc vlc-plugins-all
+
+#sudo systemctl enable fstrim.timer
+#sudo systemctl enable bluetooth.service
+#sudo systemctl enable cpupower.service
+#sudo timedatectl set-ntp true
 
 #echo "1" | sudo tee /proc/sys/kernel/sysrq
 #echo "kernel.sysrq = 1" | sudo tee /etc/sysctl.d/99-sysctl.conf
@@ -18,10 +20,6 @@
 #sudo cp takeactionforthecriticalbatterylevel.timer /etc/systemd/system/
 #sudo cp takeactionforthecriticalbatterylevel.sh /usr/local/bin/
 #sudo systemctl enable takeactionforthecriticalbatterylevel.timer
-
-#sudo systemctl enable cpupower.service
-
-#sudo timedatectl set-ntp true
 
 # https://wiki.archlinux.org/title/AMDGPU#Reduce_output_latency
 # https://wiki.archlinux.org/title/Font_configuration#Fontconfig_configuration

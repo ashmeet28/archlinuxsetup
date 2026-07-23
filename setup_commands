@@ -1,4 +1,4 @@
-#sudo pacman -S vulkan-radeon bluez bluez-utils cpupower bash-completion htop man-db man-pages udisks2 smartmontools wget zip git ffmpeg dosfstools squashfs-tools rsync imagemagick ghostscript noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-hack ttf-opensans inter-font chromium audacity lmms qbittorrent inkscape qemu-desktop vlc vlc-plugins-all
+#sudo pacman -S vulkan-radeon bluez bluez-utils cpupower bash-completion htop man-db man-pages udisks2 smartmontools wget zip git ffmpeg dosfstools squashfs-tools rsync unzip usbutils openssh base-devel imagemagick ghostscript noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-hack ttf-opensans inter-font xorg-server xf86-video-amdgpu xorg-xinit xorg-xrandr xorg-xsetroot feh pulseaudio pulseaudio-alsa pulseaudio-bluetooth pavucontrol chromium audacity lmms qbittorrent inkscape qemu-desktop vlc vlc-plugins-all
 
 #sudo systemctl enable fstrim.timer
 #sudo systemctl enable bluetooth.service

@@ -22,3 +22,9 @@
 #sudo systemctl enable cpupower.service
 
 #sudo timedatectl set-ntp true
+
+# https://wiki.archlinux.org/title/AMDGPU#Reduce_output_latency
+# https://wiki.archlinux.org/title/Font_configuration#Fontconfig_configuration
+# https://wiki.archlinux.org/title/Font_configuration/Examples#Default_fonts
+# https://wiki.archlinux.org/title/CPU_frequency_scaling#cpupower
+

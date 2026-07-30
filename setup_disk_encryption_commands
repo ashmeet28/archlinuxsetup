@@ -1,3 +1,0 @@
-#openssl kdf -keylen 32 -binary -kdfopt digest:SHA256 -kdfopt pass:password -kdfopt salt:salt -kdfopt iter:1000000000 PBKDF2 > pipeencrypter_encryption_key_file
-
-#dd if=/dev/sda | ./pipeencrypter pipeencrypter_encryption_key_file | ./pipeblockssaver 1048576 1000000000 /mnt/t/blocks_storage_dir/ | dd of=/dev/sda bs=1048576 iflag=fullblock conv=fsync
